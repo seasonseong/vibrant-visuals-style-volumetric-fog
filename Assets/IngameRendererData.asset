@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f62c9c65cf3354c93be831c8bc075510, type: 3}
   m_Name: SSAO
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   m_Settings:
     AOMethod: 1
     Downsample: 0
@@ -53,7 +53,8 @@ MonoBehaviour:
     hdrDebugViewPS: {fileID: 4800000, guid: 573620ae32aec764abd4d728906d2587, type: 3}
   m_RendererFeatures:
   - {fileID: -1878332245247344467}
-  m_RendererFeatureMap: adc0de57c6d2eee5
+  - {fileID: 5763399895319333647}
+  m_RendererFeatureMap: adc0de57c6d2eee50f4b0843abb5fb4f
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -102,3 +103,29 @@ MonoBehaviour:
   m_CopyDepthMode: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 1
+--- !u!114 &5763399895319333647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19cd4a761ba1b04a84fe7bdca69264b, type: 3}
+  m_Name: VolumetricFogFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  shader: {fileID: 4800000, guid: 1a0247f08eb638a40b230efce6dd7d11, type: 3}
+  fogColor: {r: 0.48, g: 0.62, b: 0.75, a: 1}
+  fogDensity: 0.012
+  fogBaseHeight: 0
+  fogFalloff: 0.08
+  fogMinDistance: 0
+  fogMaxDistance: 250
+  scatteringColor: {r: 1, g: 0.8415277, b: 0.7028302, a: 1}
+  scatteringIntensity: 1
+  directionality: 0.55
+  shadowSampleNoiseFactor: 1
+  skyInfluence: 0.08
+  quality: 3
